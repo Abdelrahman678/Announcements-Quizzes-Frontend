@@ -20,7 +20,7 @@ export default function SideBar() {
 
   return (
     <div className="w-1/3 fixed top-0 left-0 bottom-0 rounded-r-xl md:w-1/4 bg-primary text-white">
-      <h2 className="text-xl md:text-2xl p-2 mb-5">{t("Coligo")}</h2>
+      <h2 className="text-xl md:text-xl p-2 mb-5">{t("Coligo")}</h2>
       <hr />
       <nav className="mt-4">
         <ul className="space-y-2">
@@ -28,56 +28,56 @@ export default function SideBar() {
             <NavLink
               to="/dashboard"
               className={({ isActive }) =>
-                `flex items-center p-4 hover:bg-white hover:text-sky-400 cursor-pointer ${
+                `flex items-center sm:p-2 lg:p-4 hover:bg-white hover:text-sky-400 cursor-pointer ${
                   isActive ? "bg-white text-sky-400" : ""
                 }`
               }
             >
-              <span className="text-xl md:text-2xl">
+              <span className="text-sm ml-1 lg:text-xl">
                 <FaHome />
               </span>
-              <span className="ml-2">{t("dashboard")}</span>
+              <span className="ml-2 text-sm lg:text-xl">{t("dashboard")}</span>
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/announcements"
               className={({ isActive }) =>
-                `flex items-center p-4 hover:bg-white hover:text-sky-400 cursor-pointer ${
+                `flex items-center sm:p-2 lg:p-4 hover:bg-white hover:text-sky-400 cursor-pointer ${
                   isActive ? "bg-white text-sky-400" : ""
                 }`
               }
             >
-              <span className="text-xl md:text-2xl">
+              <span className="text-sm ml-1 lg:text-xl">
                 <FaBullhorn />
               </span>
-              <span className="ml-2">{t("announcements")}</span>
+              <span className="ml-2 text-sm lg:text-xl">{t("announcements")}</span>
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/quizzes"
               className={({ isActive }) =>
-                `flex items-center p-4 hover:bg-white hover:text-sky-400 cursor-pointer ${
+                `flex items-center sm:p-2 lg:p-4 hover:bg-white hover:text-sky-400 cursor-pointer ${
                   isActive ? "bg-white text-sky-400" : ""
                 }`
               }
             >
-              <span className="text-xl md:text-2xl">
+              <span className="text-sm ml-1 lg:text-xl">
                 <FaClipboardCheck />
               </span>
-              <span className="ml-2">{t("quizzes")}</span>
+              <span className="ml-2 text-sm lg:text-xl">{t("quizzes")}</span>
             </NavLink>
           </li>
           <li>
             <button
               onClick={handleLogout}
-              className="w-full flex items-center p-4 hover:bg-white hover:text-sky-400 cursor-pointer text-left"
+              className="w-full flex items-center sm:p-2 lg:p-4 hover:bg-white hover:text-sky-400 cursor-pointer text-left"
             >
-              <span className="text-xl md:text-2xl">
+              <span className="text-sm ml-1 lg:text-xl">
                 <FaSignOutAlt />
               </span>
-              <span className="ml-2">{t("logout")}</span>
+              <span className="ml-2 text-sm lg:text-xl">{t("logout")}</span>
             </button>
           </li>
         </ul>
