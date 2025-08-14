@@ -36,7 +36,7 @@ export default function SideBar() {
               <span className="text-sm ml-1 lg:text-xl">
                 <FaHome />
               </span>
-              <span className="ml-2 text-sm lg:text-xl">{t("dashboard")}</span>
+              <span className="sm:ml-2 text-sm lg:text-xl">{t("dashboard")}</span>
             </NavLink>
           </li>
           <li>
@@ -51,7 +51,7 @@ export default function SideBar() {
               <span className="text-sm ml-1 lg:text-xl">
                 <FaBullhorn />
               </span>
-              <span className="ml-2 text-sm lg:text-xl">{t("announcements")}</span>
+              <span className="sm:ml-2 text-sm lg:text-xl">{t("announcements")}</span>
             </NavLink>
           </li>
           <li>
@@ -66,7 +66,7 @@ export default function SideBar() {
               <span className="text-sm ml-1 lg:text-xl">
                 <FaClipboardCheck />
               </span>
-              <span className="ml-2 text-sm lg:text-xl">{t("quizzes")}</span>
+              <span className="sm:ml-2 text-sm lg:text-xl">{t("quizzes")}</span>
             </NavLink>
           </li>
           <li>
@@ -77,7 +77,7 @@ export default function SideBar() {
               <span className="text-sm ml-1 lg:text-xl">
                 <FaSignOutAlt />
               </span>
-              <span className="ml-2 text-sm lg:text-xl">{t("logout")}</span>
+              <span className="sm:ml-2 text-sm lg:text-xl">{t("logout")}</span>
             </button>
           </li>
         </ul>
