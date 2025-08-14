@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
   return (
     /* check if the language is arabic then make it left-4 else right-4 */
     <div
-      className={`absolute top-4  ${
+      className={`absolute top-1 lg:top-4  ${
         i18n.language === "ar" ? "left-4" : "right-4"
       } flex gap-2`}
     >
