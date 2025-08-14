@@ -6,7 +6,7 @@ export default function LayOut() {
   return (
     <>
       <div className="flex">
-        {/* sidebar */}
+        {/* sidebar*/}
         <SideBar />
 
         {/* dashboard with language switcher */}
